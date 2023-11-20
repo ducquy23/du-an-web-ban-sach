@@ -71,7 +71,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<strong class="tg-logo"><a href="index-2.html"><img src="{{ asset('images/logo.png') }}" alt="company name here"></a></strong>
+					<strong class="tg-logo"><a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="company name here"></a></strong>
 					<div class="tg-wishlistandcart">
 						<div class="dropdown tg-themedropdown tg-wishlistdropdown">
 							<a href="javascript:void(0);" id="tg-wishlisst" class="tg-btnthemedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,43 +87,12 @@
 						</div>
 						<div class="dropdown tg-themedropdown tg-minicartdropdown">
 							<a href="javascript:void(0);" id="tg-minicart" class="tg-btnthemedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="tg-themebadge">3</span>
+								<span class="tg-themebadge">0</span>
 								<i class="icon-cart"></i>
-								<span>$123.00</span>
+								<span>0</span>
 							</a>
 							<div class="dropdown-menu tg-themedropdownmenu" aria-labelledby="tg-minicart">
 								<div class="tg-minicartbody">
-									<div class="tg-minicarproduct">
-										<figure>
-											<img src="images/products/img-01.jpg" alt="image description">
-
-                                        </figure>
-                                        <div class="tg-minicarproductdata">
-                                            <h5><a href="javascript:void(0);">Our State Fair Is A Great Function</a>
-                                            </h5>
-                                            <h6><a href="javascript:void(0);">$ 12.15</a></h6>
-                                        </div>
-                                    </div>
-                                    <div class="tg-minicarproduct">
-                                        <figure>
-                                            <img src="images/products/img-02.jpg" alt="image description">
-
-                                        </figure>
-                                        <div class="tg-minicarproductdata">
-                                            <h5><a href="javascript:void(0);">Bring Me To Light</a></h5>
-                                            <h6><a href="javascript:void(0);">$ 12.15</a></h6>
-                                        </div>
-                                    </div>
-                                    <div class="tg-minicarproduct">
-                                        <figure>
-                                            <img src="images/products/img-03.jpg" alt="image description">
-
-                                        </figure>
-                                        <div class="tg-minicarproductdata">
-                                            <h5><a href="javascript:void(0);">Have Faith In Your Soul</a></h5>
-                                            <h6><a href="javascript:void(0);">$ 12.15</a></h6>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="tg-minicartfoot">
                                     <a class="tg-btnemptycart" href="javascript:void(0);">
@@ -132,7 +101,7 @@
                                     </a>
                                     <span class="tg-subtotal">Tổng tiền: <strong>35.78</strong></span>
                                     <div class="tg-btns">
-                                        <a class="tg-btn tg-active" href="javascript:void(0);">Xem giỏ hàng</a>
+                                        <a class="tg-btn tg-active" href="{{ route('cart') }}">Xem giỏ hàng</a>
                                         <a class="tg-btn" href="javascript:void(0);">Thanh toán</a>
                                     </div>
                                 </div>
