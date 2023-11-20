@@ -168,7 +168,6 @@
                                     <a href="{{ route('home.author') }}">Tác giả</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ route('home.author') }}">Danh sách tác giả</a></li>
-                                        <li><a href="authordetail.html">Thông tin chi tiết </a></li>
                                     </ul>
                                 </li>
                                 <li><a href="products.html">Sản phẩm bán chạy</a></li>

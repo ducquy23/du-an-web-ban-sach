@@ -45,7 +45,7 @@
                                                                                src="{{ Storage::url($author->image) }}"
                                                                                alt="image description"></a></figure>
                                     <div class="tg-authorcontent">
-                                        <h2><a href="javascript:void(0);">{{ $author->name }}</a></h2>
+                                        <h2><a href="{{ route('home.author-detail',['id' => $author->id]) }}">{{ $author->name }}</a></h2>
                                         <span>{{ $author->books()->count() }} sách đã xuất bản</span>
                                         <ul class="tg-socialicons">
                                             <li class="tg-facebook"><a href="{{ $author->facebook }}"><i

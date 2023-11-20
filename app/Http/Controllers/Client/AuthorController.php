@@ -14,4 +14,8 @@ class AuthorController extends Controller
         $authorsWithBooks = Author::with('books')->get();
         return view('client.authors',compact('authors','authorsWithBooks'));
     }
+    public function authorDetail(Request $request,$id) {
+        $author = Author::with('books')->find($id);
+        return view('client.authordetail',compact('author'));
+    }
 }

@@ -31,14 +31,12 @@ Route::match(['get','post'],'/add-to-cart/{id}',[UserController::class,"addCart"
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::prefix('home')->group(function () {
     Route::get('/author', [\App\Http\Controllers\Client\AuthorController::class, 'index'])->name('home.author');
+    Route::get('/author-detail/{id}',[\App\Http\Controllers\Client\AuthorController::class,'authorDetail'])->name('home.author-detail');
     Route::get('book-detail/{id}', [\App\Http\Controllers\Client\BookController::class, 'bookDetail'])->name('home.book-detail');
 });
 Route::get('/product', function () {
     return view('client.products');
 })->name('product');
-//Route::get('/productdetail', function () {
-//    return view('client.productdetail');
-//})->name('/productDetail');
 Route::get('/newslist', function () {
     return view('client.newslist');
 })->name('newsList');
@@ -51,9 +49,6 @@ Route::get('/newsdetail', function () {
 Route::get('/contactus', function () {
     return view('client.contactus');
 })->name('contactus');
-Route::get('/authordetail', function () {
-    return view('client.authordetail');
-})->name('authorDetail');
 Route::get('/aboutus', function () {
     return view('client.aboutus');
 })->name('aboutUs');
