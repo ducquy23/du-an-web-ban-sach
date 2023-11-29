@@ -49,7 +49,7 @@ Route::get('/newsdetail', function () {
 Route::get('/contactus', function () {
     return view('client.contactus');
 })->name('contactus');
-Route::get('/aboutus', function () {
+Route::get('/g', function () {
     return view('client.aboutus');
 })->name('aboutUs');
 Route::get('/error', function () {
